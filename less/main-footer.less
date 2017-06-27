@@ -1,0 +1,37 @@
+.main-footer {	
+	height: 145px;
+	background-color: @main-color;
+	&__logo {
+		fill: #2B2728;
+		width: 100px;
+		height: 33px;
+		margin-top: 55px;
+		float: left;
+			&:hover path{
+				fill: #46C1AE;
+			}
+			&:active path{
+				fill: #BDE3DD;
+			}			 
+		}
+	&__logo--none {
+		fill: #2B2728;
+		&:hover path {
+			fill: #2B2728;
+		}
+		&:active path {
+			fill: #2B2728;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.main-footer {
+	height: 160px;		
+	&__logo {
+		margin-top: 0;
+		display: none;
+		float: none;			 
+		}
+	}
+}

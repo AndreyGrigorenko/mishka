@@ -1,0 +1,90 @@
+.social {
+	width: 150px;
+	min-height: 29px;
+	float: left;
+	margin-top: 65px;
+	margin-left: 350px;
+	font-size: 0;	
+	&__inst {
+		display: inline-block;
+		vertical-align: top;
+		width: 22px;
+		height: 21px;		
+		margin-right: 40px;
+		margin-top: 4px;					
+		.inst {
+			display: inline-block;		
+			width: 22px;
+			height: 21px;
+			fill: #221F1F;						
+			}						
+		}
+	&__inst:hover .inst {
+			fill: #50C3B1;						
+		}	
+		
+	&__inst:active .inst{
+		 fill: #BDE3DD;						
+				
+		}
+
+	&__fb {
+		display: inline-block;
+		vertical-align: top;
+		width: 15px;
+		height: 29px;		
+		margin-right: 40px;
+		.fb {
+			display: inline-block;		
+			width: 15px;
+			height: 29px;
+			fill: #221F1F;						
+			}
+		}	
+	&__fb:hover .fb {		
+			fill: #50C3B1;			
+		}
+	&__fb:active .fb {		
+			fill: #BDE3DD;			
+		}
+	
+	&__tw {
+		display: inline-block;
+		vertical-align: top;
+		width: 24px;
+		height: 20px;
+		margin-top: 4px;
+		.tw {
+			display: inline-block;	
+			width: 24px;
+			height: 20px;
+			fill: #221F1F;						
+			}
+		}	
+	&__tw:hover .tw {		
+			fill: #50C3B1;				
+		}
+	&__tw:active .tw {		
+			fill: #BDE3DD;			
+			}
+		}
+
+@media (max-width: 1149px) {
+	.social {			
+		margin-left: 155px;
+	}
+}
+
+@media (max-width: 767px) {
+	.social {			
+		width: 260px;			
+		float: none;
+		box-sizing: border-box;
+		padding-top: 27px;
+		margin-top: 0;
+		padding-bottom: 27px;
+		padding-left: 50px;
+		margin-left: 0;			
+		border-bottom: 1px solid #E5E5E5;			
+	}
+}

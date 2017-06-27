@@ -1,0 +1,195 @@
+.for-home {
+	height: 746px; 			
+	width: 1150px;					
+	background: #F9F9F9 url("../img/hero-desktop.jpg") no-repeat center top;
+	background-size: 1150px auto;	
+	@media (min-resolution: 144dpi),
+		   (min-resolution: 1.5dppx) {
+			& {
+				background: url("../img/hero-desktop@2x.jpg");
+			}
+		}				
+	&__title-1 {		
+		font-family: "Verdana", "Tahoma", sans-serif;
+		font-size: 50px;
+		font-weight: bold;
+		line-height: 57px;
+		color: #231f20;
+		width: 700px;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 100px;
+	}
+	&__btns {
+		width: 1050px;
+		min-height: 118px;
+		margin-top: 363px;			
+	}
+		
+	&__btn-1 {
+		display: block;
+		width: 525px;
+		height: 118px;
+		background-color: @btn-color-1;
+		font-family: "Tahoma", sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 24px;
+		color: #fff;
+		border: none;
+		float: left;
+		cursor: pointer;
+		position: relative;					
+	} 	
+	.interior {
+		display: inline-block;
+		position: absolute;
+		width: 41px;
+		height: 62px;
+		right: 35px;
+		top: 30px;
+		fill: #3BB09D;
+	}
+	&__btn-1:hover {
+		background-color: #59D5BC;
+		.interior {
+			fill: #29A592;
+		} 
+	}
+	&__btn-1:active {
+		color: #97E2D2;
+		.interior {
+			fill: #44C0AA;
+		} 
+	}
+	&__btn-text {
+		width: 135px;
+		margin-top: 25px;
+		margin-left: 35px;		
+	}
+	&__btn-2 {
+		display: block;
+		width: 525px;
+		height: 118px;
+		background-color: @btn-color-2;
+		font-family: "Tahoma", sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 24px;
+		color: #fff;
+		border: none;
+		float: right;
+		cursor: pointer;
+		position: relative;
+	}
+	.toy {
+		display: inline-block;				
+		position: absolute;
+		top: 30px;
+		right: 35px;
+		width: 60px;
+		height: 60px;
+		fill: #35A999;				
+		}
+	&__btn-2:hover {
+		background-color: #46C1AE;
+		.toy{							
+			fill: #239F8E;		
+		}
+	}
+	&__btn-2:active {
+		color: #8DD5C9;
+		.toy {							
+			fill: #37B2A0;		
+		}
+	}									
+	&__img-bg {
+		position: absolute;
+		top: 730px;
+		left: 0;
+		z-index: 1;		
+	}
+}
+
+@media (max-width: 1149px) {
+	.for-home {			
+		width: 768px;					
+		background: #F9F9F9 url("../img/hero-tablet.jpg") no-repeat center top;
+		background-size: 768px auto;
+		@media (min-resolution: 144dpi),
+			    (min-resolution: 1.5dppx) {
+				& {
+					background: url("../img/hero-tablet@2x.jpg");
+				}
+			}					
+	&__title-1 {			
+		font-size: 40px;			
+		line-height: 50px;
+		width: 500px;			
+	}
+	&__btns {
+		width: 668px;			
+		margin-top: 380px;					
+	}
+	&__btn-1 {
+		width: 334px;						
+	}
+	&__btn-2 {
+		width: 334px;						
+		}
+		
+	}
+}		
+
+@media (max-width: 767px) {
+	.for-home {	
+		height: 510px;		
+		background:  #F9F9F9 url("../img/hero-mobile.jpg") no-repeat center top;			
+		box-sizing: border-box;
+		padding-top: 90px;
+		width: 320px;		
+		background-size: 320px;
+		@media  (min-resolution: 144dpi),
+			    (min-resolution: 1.5dppx) {
+				& {
+					background: url("../img/hero-mobile@2x.jpg");
+				}
+			}		
+		&__title-1 {					
+			font-size: 24px;					
+			line-height: 30px;					
+			width: 250px;
+			margin-top: 0;							
+		}
+		&__btns {
+			margin-top: 0;
+			width: 320px;
+			min-height: 208px;					
+			position: absolute;
+			top: 225px;
+			left: -30px;
+		}
+		&__btn-1 {
+			width: 320px;
+			height: 104px;					
+			float: none;
+			box-sizing: border-box;
+			padding-top: 5px;
+		}
+		&__btn-2 {
+			width: 320px;
+			height: 104px;					
+			float: none;
+			box-sizing: border-box;
+			padding-top: 5px;
+		}		
+		&__btn-text--mobile {
+			margin-left: 35px;
+		}
+		&__img-bg {
+			display: none;					
+		}
+	}
+}
+			
+

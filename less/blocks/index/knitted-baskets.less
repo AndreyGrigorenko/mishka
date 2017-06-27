@@ -1,0 +1,232 @@
+ .knitted-baskets { 
+ 	min-height: 795px; 				
+ 	&__titles {
+ 		width: 655px; 			
+ 		position: absolute;
+ 		top: 135px;
+ 		left: 50px; 			
+ 	}		
+ 	&__title-1 {
+		font-family: "Verdana", "Tahoma", sans-serif;
+		font-size: 50px;
+		font-weight: bold;
+		line-height: 57px;
+		color: #000;
+		float: right;
+		margin-top: -12px;				
+ 	}
+  	&__title-2 {
+ 		font-family: "Open Sans", "Tahoma", sans-serif;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 16px;
+		color: #63d1bb;
+		text-transform: uppercase;
+		float: left;
+		width: 75px;
+		text-align: center;
+		margin-top: 5px;
+ 	}
+ 	&__text-block {
+ 		width: 525px;
+ 		min-height: 636px;
+ 		float: left;
+ 		margin-top: 75px;
+ 	}
+ 	&__main-text {
+ 		font-family: "Open Sans", "Tahoma", sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 24px;
+		color: #444444;
+		width: 260px;
+		margin-top: 165px;
+		margin-left: 167px;		
+ 	}
+ 	&__text-block-2 {
+ 		width: 295px;
+ 		min-height: 115px;
+ 		margin-left: 167px;
+ 		margin-top: 60px; 		
+ 	} 
+ 	&__color { 		
+ 		min-height: 39px;
+ 		border-bottom: 1px solid #ECECEC;
+ 		box-sizing: border-box;
+ 		padding-top: 8px; 		
+ 	}
+ 	&__text-2 { 		
+ 		margin-left: 60px;
+ 	}  
+ 	&__diameter { 		
+ 		min-height: 39px;
+ 		border-bottom: 1px solid #ECECEC;
+ 		box-sizing: border-box;
+ 		padding-top: 8px; 		
+ 	}
+ 	&__text-4 { 		
+ 		margin-left: 33px;
+ 	} 
+ 	&__height { 		
+ 		min-height: 39px;
+ 		border-bottom: 1px solid #ECECEC;
+ 		box-sizing: border-box;
+ 		padding-top: 8px; 		
+ 	} 
+ 	&__text-6 { 		
+ 		margin-left: 42px;
+ 	} 	 				
+ 	&__price {
+ 		font-family: "Verdana", "Tahoma", sans-serif;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 24px;
+ 		color: #444444;
+ 		margin-left: 240px;
+ 		margin-top: 110px;
+ 	}
+ 	&__button {
+ 		.button-font();
+ 		width: 290px;
+ 		height: 50px;
+ 		background-color: #fff;
+ 		border: 2px solid #444444;
+ 		margin-left: 167px;
+ 		margin-top: 40px;
+ 		cursor: pointer; 		
+ 			&:hover {
+ 				background-color: #444444;
+ 				color: #fff;
+ 			}
+ 			&:active {
+ 				background-color: #444444;
+ 				color: #808080;
+ 			}	
+ 		}
+ 	&__color,
+ 	&__diameter,
+ 	&__height {
+ 		.knitted-baskets-font();
+ 	}
+ 	&__img-1 {
+ 		display: block; 		
+ 		float: right;
+ 		margin-top: 75px;
+ 	}
+ 	&__img-2 {
+ 		position: absolute;
+ 		top: 785px;
+ 		z-index: 1;
+ 		left: 0; 		
+ 		}
+ 	}
+
+@media (max-width: 1149px) {
+ 	.knitted-baskets { 
+ 		min-height: 615px; 			
+ 		&__titles {
+	 		width: 668px;
+	 		top: 60px;
+	 		left: 0;	 		
+	 	}
+	 	&__title-1 {		
+			font-size: 40px;
+			line-height: 50px;		
+			float: left;					
+ 		}
+  		&__title-2 { 		
+			float: right;
+			margin-right: 30px;		
+ 		}
+ 		&__text-block {
+	 		width: 335px;
+	 		min-height: 404px;
+	 		float: left;
+	 		margin-top: 150px;
+	 	} 		
+ 		&__main-text {	 		
+			font-size: 16px;			
+			margin-left: 0;
+			margin-top: 0;
+			width: 290px;		
+ 		}
+ 		&__text-block-2 {	 		
+	 		margin-left: 0;
+	 		font-size: 15px;	 		 		
+ 		}
+ 		&__price {	 		
+			font-size: 18px;			
+	 		margin-left: 76px;
+	 		margin-top: 40px;
+ 		}
+ 		&__button {	 		
+	 		margin-left: 0;
+	 		margin-top: 40px;
+ 		}
+ 		&__img-1 {	 		
+	 		margin-top: 150px;
+ 		}
+ 		&__img-2 {	 		
+	 		top: 607px;	 		 		
+ 		} 		
+ 	}
+}
+
+@media (max-width: 767px) {
+ 	.knitted-baskets { 
+ 		min-height: 820px; 			
+ 		&__titles {
+	 		width: 260px;
+	 		top: -40px;	 			 			 		
+	 	}
+	 	&__title-1{		
+			font-size: 23px;
+			line-height: 30px;		
+			float: none;
+			width: 260px;
+			margin-top: -40px;
+ 		}
+  		&__title-2 { 		
+			float: none;
+			font-size: 16px;
+			line-height: 16px;
+			width: 130px;
+			margin-top: -10px;
+ 		} 
+ 		&__text-block {
+ 			width: 260px;
+ 			margin-right: auto;
+ 			margin-left: auto;
+ 			float: none;
+ 			min-height: 210px;
+ 			margin-top: 115px;	 		
+	 	} 			
+ 		&__main-text {
+ 			font-size: 14px;			
+			margin-left: 0;
+			width: 250px;
+ 		}
+ 		&__text-block-2 {
+ 			width: 260px;
+ 			margin-top: 20px; 			 			
+ 		}
+ 		&__price {
+ 			margin-left: 0;
+ 			position: absolute;						
+	 		left: 60px;
+	 		top: 540px;	 		
+ 		}
+ 		&__button {
+ 			position: absolute; 		
+ 			width: 260px;
+ 			top: 595px;
+ 		}
+ 		&__img-1 {
+ 			float: none;	 		
+	 		margin-top: 30px;
+ 		}
+ 		&__img-2 {	 		
+	 		top: 717px;	 			 		 		
+ 		} 
+	}
+}

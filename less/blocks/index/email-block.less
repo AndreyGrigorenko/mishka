@@ -1,0 +1,40 @@
+.email-block {
+	margin-left: 167px;
+ 	&__title-1 {
+	   .contacts-font();
+	   margin-right: 30px;
+	}
+	&__text-1 {
+	    .contacts-font();
+	    border-bottom: 1px solid #46C1AE;
+	    	&:hover {
+	    		color: #46C1AE;
+	    	}
+	    	&:active {
+	    		color: #EBF7F5;
+	    		border-bottom: none;
+	    	}
+		}
+  	}
+
+@media (max-width: 1149px) {
+  	 .email-block {
+  	 	float: left;
+		margin-left: 0;			
+  	}
+   }
+
+@media (max-width: 767px) {
+  	.email-block {
+  	 	float: none;
+		margin-left: 0;
+			&__title-1 {
+	   			font-size: 14px;
+	   			line-height: 30px;
+			}
+			&__text-1 {
+	    		font-size: 14px;
+	   			line-height: 30px;				
+  			}
+    	}
+	}

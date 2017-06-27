@@ -1,0 +1,684 @@
+.main-form {     
+	&__titles {
+		min-height: 255px;			
+	}
+	&__main-title {			
+		font-family: "Verdana", "Tahoma", sans-serif;
+		font-size: 50px;
+		font-weight: bold;
+		line-height: 57px;
+		color: #000;
+		margin-top: 40px;
+		margin-left: 280px;
+	}
+	&__img {
+		position: absolute;
+		bottom: 0;
+		z-index: 1;
+	}
+	&__block-1 {
+		min-height: 235px;
+		box-sizing: border-box;
+		padding-top: 70px;			
+	}
+	&__text {
+		.contacts-font();
+		margin-left: 167px;			
+	}
+	&__block-2 {
+		min-height: 245px;					
+	}
+	&__title-hr-block{
+		float: left;
+		margin-left: 65px;
+		margin-top: 20px;					
+	}
+	&__radio-block{
+		float: left;
+		min-height: 130px;
+		width: 350px;
+		margin-left: 70px;								
+	}
+	input[type="radio"] {
+		display: none;
+	}
+	input[type="radio"] + label {
+		display: block;
+		padding-left: 80px;
+		position: relative;
+		cursor: pointer;
+	}
+	&__label-1 {
+		margin-top: 15px;
+	}
+	&__label-2 {
+		margin-top: 50px;
+	}
+	input[type="radio"] + label::before {
+		content: "";
+		position: absolute;
+		height: 52px;
+		width: 52px;	
+		background-color: inherit;
+		border: 2px solid #444444;
+		border-radius: 50%;			
+		top: -15px;
+		left: 0;	
+	}
+	input[type="radio"] + label:hover::before {
+		border-color: #62D1BA;
+	}
+	input[type="radio"]:checked + label::after {
+		content: "";
+		position: absolute;
+		height: 20px;
+		width: 20px;	
+		border-radius: 50%;
+		background-color: #62D1BA;			
+		top: 3px;
+		left: 18px;
+	}
+	input[type="radio"]:checked + label::before {
+		border: 2px solid #C7C7C7;
+	}
+	&__block-3 {
+		min-height: 250px;
+		background-color: @main-color;					
+	}
+	&__title-hr-block-2{
+		float: left;
+		margin-left: 65px;
+		margin-top: 75px;					
+	}
+	&__checkbox-block {
+		float: left;
+		min-height: 130px;
+		width: 735px;
+		margin-left: 70px;
+		margin-top: 60px;
+		font-size: 0;											
+	}
+	&__checkbox {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 18px;
+		width: 245px;
+		height: 55px;							
+	}
+	&__checkbox--down {
+		margin-top: 20px;
+	}
+	input[type="checkbox"] {
+		display: none;			
+	}
+	input[type="checkbox"] + label {
+		display: block;
+		padding-left: 80px;
+		position: relative;
+		cursor: pointer;
+		margin-top: 20px;
+	}			
+	input[type="checkbox"] + label::before {
+		content: "";
+		position: absolute;
+		height: 52px;
+		width: 52px;	
+		background-color: inherit;
+		border: 2px solid #444444;						
+		top: -20px;
+		left: 0;	
+	}
+	input[type="checkbox"] + label:hover::before {
+		border: 2px solid #62D1BA;
+	}
+	input[type="checkbox"]:checked + label::after {
+		content: "";
+		position: absolute;
+		height: 22px;
+		width: 33px;						
+		top: -3px;
+		left: 12px;
+		background-image: url("../img/vector.svg");
+	}
+	input[type="checkbox"]:checked + label::before {
+		border: 2px solid #C7C7C7;
+	}
+	&__title {			
+		.main-form__title-hr-font();			
+	}
+	&__button {
+		.button-font();
+	}
+	.central-block-2 {
+		background-color: @main-color;
+	}
+	&__block-4 {
+		min-height: 325px;								
+	}
+	&__title-hr-block-3 {
+		float: left;
+		margin-left: 65px;
+		margin-top: 70px;
+	}
+	&__inputs-block {
+		width: 700px;
+		min-height: 200px;
+		float: left;
+		margin-left: 74px;
+		margin-top: 47px;			
+	}
+	&__text-1 {
+		width: 550px;
+		height: 60px;			
+		margin-left: 35px;
+		padding-left: 20px;
+		border: none;
+		border-bottom: 2px solid #000;			
+			&:hover {
+				border-bottom: 2px solid #63D1BB;
+			}
+			&:focus {
+				border-bottom: 2px solid #63D1BB;
+			}
+		}		
+	&__text-2 {
+		width: 605px;
+		height: 60px;			
+		margin-left: 27px;
+		margin-top: 25px;
+		padding-left: 20px;
+		border: none;
+		border-bottom: 2px solid #000;
+			&:hover {
+				border-bottom: 2px solid #63D1BB;
+			}
+			&:focus {
+				border-bottom: 2px solid #63D1BB;
+			}
+		}
+	&__text-3 {
+		width: 550px;
+		height: 60px;			
+		margin-left: 35px;
+		padding-left: 20px;
+		margin-top: 25px;
+		border: none;
+		border-bottom: 2px solid #000;
+			&:hover {
+				border-bottom: 2px solid #63D1BB;
+			}
+			&:focus {
+				border-bottom: 2px solid #63D1BB;
+			}
+		}
+	&__block-5 {
+		min-height: 245px;
+		background-color: @main-color;								
+	}
+	&__title-hr-block-4 {
+		float: left;
+		margin-left: 65px;
+		margin-top: 65px;
+	}		
+	&__tel-1  {
+		float: left;			
+		width: 675px;
+		height: 60px;			
+		margin-left: 85px;
+		padding-left: 20px;
+		margin-top: 40px;
+		background-color: #F1F1F1;
+		border: none;
+		border-bottom: 2px solid #000;						
+			&:hover {
+				border-bottom: 2px solid #63D1BB;
+			}
+			&:focus {
+				border-bottom: 2px solid #63D1BB;
+			}				
+		}
+	&__tel-label {
+		float: left;			
+		height: 60px;
+		position: relative;					
+	}
+	.tel {		
+		position: absolute;
+		top: 65px;
+		right: 12px;
+		width: 23px;
+		height: 22px;
+		fill: #cecece;		
+	}
+	&__tel-1:hover+.tel,
+	&__tel-1:focus+.tel {
+		fill: #63D1BB;
+	}	
+	&__email-label {
+		float: left;					
+		height: 60px;
+		position: relative;									
+	}
+	.mail {		
+		position: absolute;
+		top: 51px;
+		right: 8px;
+		width: 27px;
+		height: 18px;
+		fill: #cecece;		
+	}
+	&__email-1:hover+.mail,
+	&__email-1:focus+.mail {
+		fill: #63D1BB;
+	}	
+	&__title-hr-block-5 {
+		float: left;
+		margin-left: 55px;
+		margin-top: 50px;
+	}		
+	&__email-1 {
+		float: left;
+		width: 675px;
+		height: 60px;			
+		margin-left: 70px;
+		padding-left: 20px;
+		margin-top: 25px;
+		background-color: #F1F1F1;
+		border: none;
+		border-bottom: 2px solid #000;			
+			&:hover {
+				border-bottom: 2px solid #63D1BB;
+			}
+			&:focus {
+				border-bottom: 2px solid #63D1BB;
+			}
+		}		
+	&__block-6 {
+		min-height: 445px;								
+	}
+	&__title-hr-block-6 {
+		float: left;
+		margin-left: 65px;
+		margin-top: 85px;
+	}
+	&__textarea-main-block {
+		width: 700px;
+		min-height: 285px;
+		float: left;
+		margin-left: 75px;
+		margin-top: 65px;						
+	}
+	&__textarea {
+		width: 675px;
+		height: 125px;			
+		padding-left: 20px;
+		padding-top: 20px;			
+		border: 2px solid #000;			
+			&:hover {
+				border: 2px solid #63D1BB;
+			}
+			&:focus {
+				border: 2px solid #63D1BB;
+			}
+		}
+	&__textarea-block{
+		width: 700px;
+		height: 50px;			
+		margin-top: 85px;										
+		}
+	&__button {
+		float: left;
+		width: 230px;
+		height: 50px;
+		background-color: #fff;
+		color: #444444;
+		cursor: pointer;
+		border: 2px solid #444444;
+			&:hover {
+				background-color: #444444;
+				color: #fff;
+			}
+			&:active {
+				color: #8D8D8D;
+			}
+		}
+	&__textarea-text {
+		float: right;
+		font-family: "Open Sans", "Tahoma", sans-serif;
+		font-size: 16px;
+		font-weight: normal;
+		line-height: 30px;
+		color: #444444;
+		margin-top: 10px;
+		}
+	}
+
+@media (max-width: 1149px) {
+	.main-form {
+		&__titles {
+			min-height: 255px;			
+		}
+		&__main-title {			
+		    font-size: 40px;		   
+		    line-height: 50px;		    
+		    margin-top: 60px;
+		    margin-left: 130px;
+		}
+
+		&__block-1 {
+			min-height: 185px;
+			padding-top: 50px;			
+		}
+		&__text {			
+			margin-left: 0;						
+		}
+
+		&__block-2 {
+			min-height: 180px;					
+		}
+		&__title-hr-block{			
+			margin-left: 0;								
+		}
+		&__radio-block{			
+			margin-left: 130px;								
+		}
+
+		&__block-3 {
+			min-height: 325px;								
+		}
+		&__title-hr-block-2 {			
+			margin-left: 0;
+			margin-top: 85px;
+		}
+		&__checkbox-block {			
+			min-height: 200px;
+			width: 500px;
+			margin-left: 120px;
+			margin-top: 60px;																	
+		}
+		&__checkbox {			
+			width: 225px;										
+		}
+		&__checkbox--down {
+			margin-top: 20px;
+		}
+		&__checkbox--down-2 {
+			margin-top: 20px;
+		}
+		&__checkbox--down-3 {
+			margin-right: 50px;
+		}
+		
+		
+		&__block-4 {
+			min-height: 325px;								
+		}
+		&__title-hr-block-3 {			
+			margin-left: 0;			
+		}
+		&__inputs-block {
+			width: 510px;
+			min-height: 200px;			
+			margin-left: 115px;
+			margin-top: 40px;						
+		}
+		&__text-1 {
+			width: 355px;
+			height: 60px;			
+			margin-left: 40px;
+			padding-left: 20px;
+			margin-top: 10px;			
+			}		
+		&__text-2 {
+			width: 400px;
+			height: 60px;			
+			margin-left: 20px;
+			margin-top: 10px;
+			padding-left: 40px;			
+			}
+		&__text-3 {
+			width: 355px;
+			height: 60px;			
+			margin-left: 40px;
+			padding-left: 20px;
+			margin-top: 10px;			
+			}
+
+		&__block-5 {
+			min-height: 250px;											
+		}
+		&__title-hr-block-4 {			
+			margin-left: 0;			
+		}		
+		&__tel-1  {						
+			width: 480px;						
+			margin-left: 125px;								
+			}					
+		&__title-hr-block-5 {			
+			margin-left: 0;			
+		}		
+		&__email-1 {			
+			width: 480px;						
+			margin-left: 100px;						
+		}
+
+		&__block-6 {
+			min-height: 365px;			
+			padding-bottom: 35px;								
+		}
+		&__title-hr-block-6 {			
+			margin-left: 0;			
+		}
+		&__textarea-main-block {
+			width: 500px;
+			min-height: 245px;			
+			margin-left: 120px;									
+			}
+		&__textarea-block{
+			width: 500px;																
+			}
+		&__textarea {
+			width: 475px;
+			height: 120px;					
+			}
+		&__button {
+			position: absolute;
+			left: 0;
+			}		
+		}
+	}
+
+
+@media (max-width: 767px) {
+	.main-form {
+		&__titles {
+			min-height: 185px;
+			box-sizing: border-box;
+			padding-top: 75px;			
+		}
+		&__main-title {			
+		    font-size: 24px;		   
+		    line-height: 30px;		    
+		    margin-top: 0;
+		    margin-left: 10px;
+		}
+		&__img {
+			display: none;
+		}
+
+		&__block-1 {
+			min-height: 155px;			
+			padding-top: 10px;						
+		}
+		&__text {			
+			font-size: 14px;
+			width: 260px;						
+		}
+
+		&__block-2 {
+			min-height: 230px;								
+		}
+		&__title-hr-block {				
+			float: none;											
+		}		
+		&__title {			
+			float: left;								
+		}
+		&__hr {			
+			float: right;
+			width: 200px;
+			border-bottom: 1px solid #62D1BA;
+			margin-top: 7px;								
+		}
+		&__hr--little {
+			width: 180px;
+		}
+		&__radio-block {			
+			margin-left: 0;
+			float: none;			
+			width: 260px;
+			font-size: 16px;
+			margin-top: 50px;								
+		}
+		&__label-2 {
+			margin-top: 30px;
+		}
+
+
+		&__block-3 {
+			min-height: 450px;
+			background-color: #fff;								
+		}
+		&__title-hr-block-2 {			
+			float: none;
+			margin-top: 0;								
+		}
+		&__checkbox-block {			
+			min-height: 365px;
+			width: 260px;
+			margin-left: 0;
+			margin-top: 30px;																	
+		}
+		&__checkbox {			
+			width: 225px;
+			display: block;												
+		}
+		&__checkbox--down {
+			margin-top: 0;
+		}
+		&__checkbox--down-2 {
+			margin-top: 0;
+		}
+		&__checkbox--down-3 {
+			margin-right: 0;
+		}		
+		
+		&__block-4 {
+			min-height: 315px;								
+		}
+		&__title-hr-block-3 {				
+			float: none;											
+		}
+		&__inputs-block {
+			width: 260px;
+			min-height: 265px;			
+			margin-left: 0;
+			margin-top: 40px;						
+		}
+		&__input {			
+			margin-top: 25px;						
+		}
+		&__input--1 {			
+			margin-top: 0;						
+		}
+		&__text-1 {
+			width: 260px;
+			height: 50px;			
+			margin-left: 0;
+			padding-left: 0;
+			margin-top: 0;			
+			}		
+		&__text-2 {
+			width: 260px;
+			height: 50px;			
+			margin-left: 0;
+			margin-top: 0;
+			padding-left: 0;			
+			}
+		&__text-3 {
+			width: 260px;
+			height: 50px;			
+			margin-left: 0;
+			padding-left: 0;
+			margin-top: 0;			
+			}
+
+		&__block-5 {
+			min-height: 205px;
+			background-color: #fff;											
+		}
+		&__title-hr-block-4 {			
+			float: none;								
+		}		
+		&__tel-1  {						
+			width: 260px;						
+			margin-left: 0;
+			background-color: #fff;
+			float: none;		
+			margin-top: 0;
+			padding-left: 0;							
+		}
+		.tel {			
+			top: 20px;
+			right: 10px;
+		}			
+		&__title-hr-block-5 {			
+			float: none;								
+		}		
+		&__email-1 {			
+			width: 260px;						
+			margin-left: 0;
+			background-color: #fff;
+			float: none;		
+			margin-top: 0;
+			padding-left: 0;						
+		}
+		.mail {			
+			top: 20px;			
+		}
+
+		&__block-6 {
+			min-height: 310px;			
+			padding-bottom: 0px;								
+		}
+		&__title-hr-block-6 {			
+			float: none;
+			margin-top: 60px;								
+		}
+		&__textarea-main-block {
+			width: 260px;
+			min-height: 240px;			
+			margin-left: 0;
+			margin-top: 30px;												
+		}
+		&__textarea-block{
+			width: 260px;
+			float: none;																
+		}
+		&__textarea {
+			width: 220px;
+			height: 130px;
+			padding-right: 20px;								
+		}
+		&__button {			
+			float: none;
+			width: 260px;
+			bottom: 45px;
+		}
+		&__textarea-text {
+			display: none;
+		}		
+	}
+}
+
+

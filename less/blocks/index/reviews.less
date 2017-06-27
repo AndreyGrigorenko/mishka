@@ -1,0 +1,234 @@
+.reviews {
+	min-height: 535px;	
+	.central-block {
+		background: url("../img/review-bg-desktop.jpg") no-repeat left top;
+		min-height: 457px;
+		top: -40px;
+		box-sizing: border-box;
+		padding-top: 25px;					
+		background-size: 350px auto;
+		@media (min-resolution: 144dpi),
+			   (min-resolution: 1.5dppx) {
+				& {
+					background: url("../img/review-bg-desktop@2x.jpg");
+				}
+			}		
+		}
+  	&__title {
+	    font-family: "Verdana", "Tahoma", sans-serif;
+	    font-size: 50px;
+	    font-weight: bold;
+	    line-height: 57px;
+	    color: #000;	    
+	    margin-left: 167px;
+	}
+	&__text {
+		font-family: "Open Sans", "Tahoma", sans-serif;
+	    font-size: 14px;
+	    font-weight: normal;
+	    line-height: 30px;
+	    color: #444444;
+	    margin-left: 167px;
+	    margin-top: 60px;
+	    width: 610px;
+	}
+	&__name {
+	    font-family: "Verdana", "Tahoma", sans-serif;
+	    font-size: 14px;
+	    font-weight: bold;
+	    line-height: 24px;
+	    color: #000;
+	    margin-left: 167px;
+	}
+	&__email {
+	    font-family: "Open Sans", "Tahoma", sans-serif;
+	    font-size: 14px;
+	    font-weight: normal;
+	    line-height: 30px;
+	    color: #444444;
+	    margin-left: 167px;
+	}
+	&__next {
+	    position: absolute;
+	    right: 0;
+	    top: 310px;
+	    width: 175px;
+	    height: 55px;
+	    border: none;	    
+	}
+	&__next-prev {
+	    float: left;	    
+	    width: 87px;
+	    height: 55px;
+	    border: none;
+	    cursor: pointer;
+	    background-color: #fff;
+	    position: relative;
+	}	   
+	.huge-arrow-left {
+	    display: inline-block;
+	    position: absolute;
+	    top: 15px;
+	    left: 20px;
+	    width: 50px;
+	    height: 26px;
+	    fill: #000000;	   
+	   }
+	&__next-prev:hover .huge-arrow-left {     	    		
+	   	 fill: #666666;   
+	}
+	&__next-prev:active .huge-arrow-left {     	    		
+	    fill: #B2B2B2;	    
+	}
+			
+	&__next-next {
+	    float: right;	    
+	    width: 87px;
+	    height: 55px;
+	    border: none;
+	    cursor: pointer;
+	    background-color: #fff;
+	    position: relative;
+	    border: none;	    	
+		}
+	.huge-arrow-right {
+	    display: inline-block;
+	    position: absolute;
+	    top: 15px;
+	    right: 20px;
+	    width: 50px;
+	    height: 26px;
+	    fill: #000000;	   
+	   }
+	&__next-next:hover .huge-arrow-right {     	    		
+	   	 fill: #666666;   
+	}
+	&__next-next:active .huge-arrow-right {     	    		
+	    fill: #B2B2B2;	    
+	}
+	&__write {
+		.button-font();
+		position: absolute;
+		right: 0;
+		top: 80px;
+		width: 171px;
+		height: 46px;
+		border: 2px solid #444444;
+		color: #444444;
+		background-color: #fff;
+		cursor: pointer;
+			&:hover {
+				color: #fff;
+				background-color: #444444;
+			}
+			&:active {
+				color: #8D8D8D;				
+			}
+		}
+	&__img-bg {
+		position: absolute;
+		top: 565px;
+		left: 0;		
+		z-index: 1;
+	}  
+}
+
+@media (max-width: 1149px) {
+	.reviews {
+		.central-block {
+			background: none;
+			top: 15px;
+			}	
+		&__title {	   
+	    	font-size: 40px;
+	    	line-height: 50px;	    	    
+	    	margin-left: 0;
+		}
+		&__text {		
+	    	font-size: 16px;	    
+	    	margin-left: 0;
+	    	width: 700px;	   
+		}
+		&__name {	   
+	    	font-size: 16px;	    
+	    	margin-left: 0;
+		}
+		&__email {	   
+	    	font-size: 16px;	   
+	    	margin-left: 0;
+			}
+		&__write {		
+			top: 60px;  
+			}
+		&__img-bg {		
+			top: 528px;
+			left: 0;		
+			}		
+		&--central-block-2 {
+			width: 768px;
+			margin: 0 auto;
+			background: url("../img/review-bg-desktop.jpg") no-repeat left top;
+			background-size: 350px auto;
+			@media (min-resolution: 144dpi),
+			       (min-resolution: 1.5dppx) {
+				& {
+					background: url("../img/review-bg-desktop@2x.jpg");
+				}
+			}
+		}
+	}		
+}
+
+@media (max-width: 767px) {
+.reviews {	
+	min-height: 575px;	
+	.central-block {		
+		top: -50px;
+		}		
+	&__title {	   
+	    font-size: 24px;
+	    line-height: 30px;	      
+	}
+	&__text {		
+	    font-size: 14px;    
+	    width: 260px;
+	    margin-top: 20px;	   
+	}
+	&__name {	   
+	    font-size: 14px;	    
+	}
+	&__email {	   
+	    font-size: 14px;	   
+	}
+	&__write {		
+		top: 530px;
+		width: 260px;  
+	}
+	&__img-bg {		
+		top: 573px;		
+	}
+	&__next {	    
+	    top: 435px;
+	    width: 260px;	    	    
+	}
+	&__next-next {	    
+	    width: 130px;
+	    border: 1px solid #F1F1F1;
+	    border-left: none;
+	    	.huge-arrow-right {	    		
+	    		right: 38px;	    		
+	    	}
+		}
+	&__next-prev {	    
+	    width: 130px;
+	    border: 1px solid #F1F1F1;
+	    	.huge-arrow-left {	    		
+	    		left: 38px;	    		
+	    	}
+		}
+	&--central-block-2 {
+		width: 320px;		
+		background: none;
+		}	
+	}			
+}

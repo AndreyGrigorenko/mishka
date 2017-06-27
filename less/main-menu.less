@@ -1,0 +1,262 @@
+ .main-menu {
+ 	&__link {
+ 		display: block; 			
+		font-family: "Verdana", "Tahoma", sans-serif;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 24px;
+		color: #000;
+		&:hover {
+ 			color: #8D8D8D;
+ 		}
+ 		&:active {
+ 			color: #CACACA;
+ 		} 					 					
+ 	}
+ 	&__link--1 {
+ 		margin-top: 33px;
+ 		padding-right: 35px;		 					
+ 		}
+ 	&__link--2 {
+ 		margin-top: 33px;
+ 		float: left;
+ 		margin-left: 35px; 			
+ 		} 		
+ 	&__link--4 {
+ 		margin-top: 33px;
+ 		}
+ 	&__cell { 			
+ 		box-sizing: border-box; 			
+ 		display: inline-block;
+ 		vertical-align: top;
+ 		font-size: 0;
+ 		min-height: 89px;
+ 		margin-left: -6px;  						
+ 		}
+ 	&__cell--1 {
+ 		margin-left: 0;					
+ 		}			 				
+ 	&__cell--2 {
+ 		width: 510px;
+ 		border-left: 1px solid #E7E7E7; 						
+ 		position: relative;					
+ 		}
+ 	&__icon {
+ 		width: 22px;
+		height: 16px;
+		position: absolute;
+		top: 35px;
+		right: 20px;
+		cursor: pointer;
+		display: none;
+ 	}
+ 	&__cell--3 {
+ 		width: 83px;
+ 		border-left: 1px solid #E7E7E7;
+ 		border-right: 1px solid #E7E7E7;
+ 		position: relative;
+ 		cursor: pointer; 		
+ 		.search {
+ 			display: inline-block;
+ 			position: absolute; 			
+ 			left: 32px;
+ 			top: 35px;
+ 			width: 18px;
+ 			height: 19px;
+ 			fill: #D3D2D2; 			
+ 		}
+ 	}
+ 	&__cell--3:hover .search {
+		fill: #80DAC8;
+ 	}
+ 	&__cell--3:active .search {
+		fill: #D0F1EA;
+ 	}
+
+ 	&__cell--4 {
+ 		box-sizing: border-box;
+ 		padding-left: 80px;
+ 		position: relative;
+ 		cursor: pointer;
+ 		.cart {
+ 			display: inline-block; 			
+ 			position: absolute;
+ 			top: 35px;
+ 			left: 32px;
+ 			width: 21px;
+ 			height: 20px;
+ 			fill: #D5D5D5; 			
+ 		}
+ 	} 	
+ 	&__cell--4:hover .cart {
+ 		fill: #63D1BB;
+ 	}
+ 	&__cell--4:hover .main-menu__link--4 { 		 
+ 		color: #8D8D8D; 									
+  	}  	 	 
+ 	&__cell--4:active .cart {
+ 		fill: #D3F2EC; 		 
+ 	} 
+ 	&__cell--4:active .main-menu__link--4 { 		 
+ 		color: #CACACA; 									
+  	}					
+ 	&__logo {
+		display: inline-block;
+		float: right;
+		width: 150px;
+		height: 70px;
+		margin-top: 10px;
+		margin-right: 100px;
+		fill: #0b0b0b;
+		&:hover path {
+			fill: #666666;
+		}
+		&:active path {
+			fill: #B2B2B2;
+		}
+	}
+	&__logo--tablet {
+		display: none;
+	}
+	&__logo--mobile {
+		display: none;						
+	}
+	&__logo--none {
+		&:hover path {
+			fill: #000;
+		}
+		&:active path {
+			fill: #000;
+		}
+	}
+						
+
+@media (max-width: 1149px) {
+	&__cell--1 {
+		width: 0;																
+	}			
+	&__cell--2 {
+		width: 270px;
+		border: none;
+	}
+	&__link--1 {				
+		position: absolute;
+		top: 80px;
+		z-index: 1;
+		font-size: 14px;								
+	}			
+	&__link--2 {
+		position: absolute;
+		top: 80px;
+		z-index: 1;
+		left: 130px;
+		font-size: 14px;
+		width: 150px;
+	}
+	&__logo {
+		display: inline-block;
+		width: 113px;
+		height: 45px;
+		margin-top: 25px;
+		float: left;
+		fill: #0b0b0b;
+			&:hover path {
+				fill: #666666;
+			}
+			&:active path {
+				fill: #B2B2B2;
+			}
+		}
+	&__logo--none {
+		&:hover path {
+			fill: #000;
+		}
+		&:active path {
+			fill: #000;
+		}
+	}
+	&__logo--desktop {
+		display: none;						
+		}
+		&__logo--mobile {
+			display: none;						
+		}
+		&__logo--tablet {
+			display: block;						
+		}			
+	}
+
+@media (max-width: 767px) {
+	&__cell {						
+	 	display: block;	 																			
+		}
+	&__cell--1,			
+	&__cell--3,
+	&__cell--4 {
+		display: none;
+		font-size: 0;
+	}			
+	&__cell--2 {
+		font-size: 0;
+		min-height: 80px;
+		box-sizing: border-box;
+		padding-top: 1px;
+	}
+	&__icon {	 			
+		display: none;						
+		&::after {
+			content: "";
+			position: absolute;						
+			width: 22px;
+			height: 14px;
+			background-image: url("../img/menu.svg");
+			}
+		}			
+	&__link--2 {				
+		font-size: 0;
+		}
+	&__link {				
+		display: none;		
+		}
+	&__link-logo {
+		display: block;
+		width: 85px;
+		margin-left: 85px;				
+		}			
+	&__logo {
+		width: 85px;
+		height: 35px;
+		display: block;
+		float: none;			
+		margin-left: 0;
+		fill: #191919;			
+		&:hover path {
+			fill: #666666;
+			}
+		&:active path {
+			fill: #B2B2B2;
+			}			
+		}
+	&__logo--none {
+		&:hover path {
+			fill: #000;
+		}
+		&:active path {
+			fill: #000;
+		}
+	}
+	&__logo--desktop {
+		display: none;						
+		}
+	&__logo--tablet {
+		display: none;
+	}
+	&__logo--mobile {
+		display: block;						
+	}
+	&__logo--margin {
+		margin-left: 85px;						
+		}
+ 	}
+}
+

@@ -1,0 +1,41 @@
+.made-by-academy {
+	display: block;
+  	width: 190px;
+  	min-height: 35px;
+  	float: right;
+  	margin-top: 60px;  	
+	font-family: "Verdana", "Tahoma", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #000;
+	box-sizing: border-box;
+	padding-top: 7px;
+	position: relative;	
+	&__link	{
+		display: inline-block;
+		position: absolute;		
+		right: 0;
+		top: 0;
+		width: 27px;
+		height: 34px;
+		fill: #63D1BB;		
+	}	
+}
+.made-by-academy:hover .made-by-academy__link {
+	 fill: #46C1AE;	
+}
+.made-by-academy:active {
+	color: #BFBFBF; 
+	.made-by-academy__link {
+		fill: #BDE3DD;		
+	}	
+}	
+
+@media (max-width: 767px) {
+	.made-by-academy {		  	
+		float: none;		  	
+		margin-top: 20px;
+		margin-left: 30px;
+	}
+}

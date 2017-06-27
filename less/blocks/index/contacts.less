@@ -1,0 +1,122 @@
+.contacts {
+	min-height: 650px;
+	.central-block {
+		background: url("../img/map-bg-desktop.jpg") no-repeat right 100px;
+		min-height: 600px;
+		box-sizing: border-box;
+		padding-top: 120px;
+        background-size: 525px auto;            
+        @media (min-resolution: 144dpi),
+               (min-resolution: 1.5dppx) {
+                & {
+                    background: url("../img/map-bg-desktop@2x.jpg");
+                    }
+                }   
+            &::before {
+                content: "";
+                position: absolute;
+                top: 160px;
+                left: 65px;
+                width: 47px;
+                height: 81px;
+                background-image: url("../img/flag.svg");
+            }			
+		}
+    &__title {
+    	font-family: "Verdana", "Tahoma", sans-serif;
+    	font-weight: bold;
+    	font-size: 50px;
+    	line-height: 57px;
+    	color: #000;    		
+    	margin-left: 167px;
+    }
+    &__write-us {    		
+    	.button-font();
+    	position: absolute;
+    	left: 167px;
+    	bottom: 43px;
+    	width: 226px;
+    	height: 46px;
+    	background-color: #fff;
+    	border: 2px solid #444444;
+    	cursor: pointer;
+    		&:hover {
+    			background-color: #444444;
+    			color: #fff;
+    		}
+    		&:active {    				
+    			color: #8D8D8D;
+    		}
+        }
+    }
+
+@media (max-width: 1149px) {
+        .contacts {
+            min-height: 930px;                   
+            .central-block {
+                background: none;
+                padding-top: 30px;
+                &::before {                                
+                    top: 55px;
+                    left: 615px;                                
+                    }           
+                } 
+            &__title {                    
+                font-size: 40px;
+                line-height: 50px;                                
+                 margin-left: 0;                        
+                } 
+            &__write-us {           
+                left: 220px;
+                top: 835px;                
+                } 
+            &--central-block-2 {
+                width: 768px;
+                margin: 0 auto;                                        
+                background: url("../img/map-bg-tablet.jpg") no-repeat center 320px;
+                background-size: 768px auto;
+                @media (min-resolution: 144dpi),
+                       (min-resolution: 1.5dppx) {
+                        & {
+                            background: url("../img/map-bg-tablet@2x.jpg");
+                            }
+                        }                                                             
+                    } 
+                }                              
+            }
+
+@media (max-width: 767px) {
+    .contacts {
+        min-height: 865px;                   
+        .central-block {
+            margin: 0 auto;                      
+            padding-top: 20px;
+            &::before {                                
+                display: none;                              
+                    }           
+                } 
+        &__title {                    
+            font-size: 24px;
+            line-height: 30px;                                              
+            } 
+        &__write-us {
+            width: 260px;           
+            left: 0;
+            top: 775px;                
+            }
+        &--central-block-2 {
+            width: 320px;
+            margin: 0 auto;                                        
+            background: url("../img/map-bg-mobile.jpg") no-repeat center 270px;
+            background-size: 320px auto;
+            @media (min-resolution: 144dpi),
+                   (min-resolution: 1.5dppx) {
+                    & {
+                         background: url("../img/map-bg-mobile@2x.jpg");
+                        }
+                    }                            
+                }  
+            }                        
+        }
+
+
