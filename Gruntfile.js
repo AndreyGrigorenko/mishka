@@ -10,7 +10,6 @@ require("load-grunt-tasks")(grunt);
   			}
 		},
 
-
 		postcss: {
       		options: {
         		processors: [
@@ -42,7 +41,6 @@ require("load-grunt-tasks")(grunt);
     		}
     	},
 
-
     	imagemin: {
       		build: {
         		options: {
@@ -55,7 +53,6 @@ require("load-grunt-tasks")(grunt);
       		}
     	},
 
-
     	/*sprite:{
       		all: {
         		src: 'img/png/*.png',
@@ -63,7 +60,6 @@ require("load-grunt-tasks")(grunt);
         		destCss: 'build/img/png-sprite.css'
       		}
     	},*/
-
 
     	svgstore: {
     		options: {
@@ -77,7 +73,6 @@ require("load-grunt-tasks")(grunt);
     			}
     		}
     	},
-
 
     	svgmin: {
     		symbols: {
@@ -103,7 +98,7 @@ require("load-grunt-tasks")(grunt);
     			files: [{
     				expand: true,
     				src: [
-    				   "fonts/**/*.{woff,woff2}",
+    				 "fonts/**/*.{woff,woff2}",
 					   "img/**",
 					   "js/**",
 					   "*.html"
@@ -143,10 +138,8 @@ require("load-grunt-tasks")(grunt);
         		tasks: ["js"]       
       		},
      		images: {
-        		files: [
-          			"img/**/*.{png,jpg,svg,gif}"
-        		],
-        	tasks: ["img"]        
+        		files: ["img/**/*.{png,jpg,svg,gif}"],
+        	  tasks: ["img"]        
       		}    
   		},
 
