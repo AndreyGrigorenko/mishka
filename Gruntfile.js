@@ -45,11 +45,11 @@ require("load-grunt-tasks")(grunt);
       		build: {
         		options: {
           			optimizationLevel: 3
-        		},
+        		},        		
         		files: [{
           			expand: true,
           			src: ["build/img/**/*.{png,jpg,gif}"]          
-        		}]
+        		}]        	
       		}
     	},
 
@@ -85,10 +85,10 @@ require("load-grunt-tasks")(grunt);
 
 
         uglify: {
-      		start: {
+      		start: {      			
         		files: {
           			"build/js/main.min.js": ["js/main.js"]
-        		}
+        		}        		
       		}
     	},
 
@@ -117,9 +117,8 @@ require("load-grunt-tasks")(grunt);
 
 
 		jshint: {
-    		all: ["Gruntfile.js", "js/main.js"]
+    		all: ["Gruntfile.js", "js/main.js"]    		
   		},
-
 
   		watch: {
   			options: {
@@ -139,10 +138,9 @@ require("load-grunt-tasks")(grunt);
       		},
      		images: {
         		files: ["img/**/*.{png,jpg,svg,gif}"],
-        	  tasks: ["img"]        
+        	  	tasks: ["img"]        
       		}    
   		},
-
 
   		browserSync: {
       		default_options: {
@@ -199,5 +197,5 @@ grunt.registerTask ("build", [
   	//"sprite",
   	"jshint",
   	"uglify"      	
-]);
+	]);
 };

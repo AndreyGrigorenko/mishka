@@ -6,14 +6,8 @@
 		top: -40px;
 		box-sizing: border-box;
 		padding-top: 25px;					
-		background-size: 350px auto;
-		@media (min-resolution: 144dpi),
-			   (min-resolution: 1.5dppx) {
-				& {
-					background: url("../img/review-bg-desktop@2x.jpg");
-				}
-			}		
-		}
+		background-size: 350px auto;			
+	}
   	&__title {
 	    font-family: "Verdana", "Tahoma", sans-serif;
 	    font-size: 50px;
@@ -168,13 +162,7 @@
 			width: 768px;
 			margin: 0 auto;
 			background: url("../img/review-bg-desktop.jpg") no-repeat left top;
-			background-size: 350px auto;
-			@media (min-resolution: 144dpi),
-			       (min-resolution: 1.5dppx) {
-				& {
-					background: url("../img/review-bg-desktop@2x.jpg");
-				}
-			}
+			background-size: 350px auto;			
 		}
 	}		
 }
@@ -182,7 +170,8 @@
 @media (max-width: 767px) {
 .reviews {	
 	min-height: 575px;	
-	.central-block {		
+	.central-block {
+		background: none;		
 		top: -50px;
 		}		
 	&__title {	   
@@ -228,7 +217,7 @@
 		}
 	&--central-block-2 {
 		width: 320px;		
-		background: none;
+		background: none;		
 		}	
 	}			
 }

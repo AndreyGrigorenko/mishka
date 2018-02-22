@@ -5,13 +5,7 @@
 		min-height: 600px;
 		box-sizing: border-box;
 		padding-top: 120px;
-        background-size: 525px auto;            
-        @media (min-resolution: 144dpi),
-               (min-resolution: 1.5dppx) {
-                & {
-                    background: url("../img/map-bg-desktop@2x.jpg");
-                    }
-                }   
+        background-size: 525px auto;       
             &::before {
                 content: "";
                 position: absolute;
@@ -48,13 +42,13 @@
     			color: #8D8D8D;
     		}
         }
-    }
+    }    
 
 @media (max-width: 1149px) {
         .contacts {
             min-height: 930px;                   
             .central-block {
-                background: none;
+            	background: none;                
                 padding-top: 30px;
                 &::before {                                
                     top: 55px;
@@ -75,20 +69,16 @@
                 margin: 0 auto;                                        
                 background: url("../img/map-bg-tablet.jpg") no-repeat center 320px;
                 background-size: 768px auto;
-                @media (min-resolution: 144dpi),
-                       (min-resolution: 1.5dppx) {
-                        & {
-                            background: url("../img/map-bg-tablet@2x.jpg");
-                            }
-                        }                                                             
+                                                                            
                     } 
                 }                              
-            }
+            }            
 
 @media (max-width: 767px) {
     .contacts {
         min-height: 865px;                   
         .central-block {
+            background: none;
             margin: 0 auto;                      
             padding-top: 20px;
             &::before {                                
@@ -108,15 +98,10 @@
             width: 320px;
             margin: 0 auto;                                        
             background: url("../img/map-bg-mobile.jpg") no-repeat center 270px;
-            background-size: 320px auto;
-            @media (min-resolution: 144dpi),
-                   (min-resolution: 1.5dppx) {
-                    & {
-                         background: url("../img/map-bg-mobile@2x.jpg");
-                        }
-                    }                            
-                }  
-            }                        
+            background-size: 320px auto;                                 
+            }
         }
+    }
 
+    
 
