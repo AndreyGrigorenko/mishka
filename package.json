@@ -30,6 +30,5 @@
   "scripts": {
     "build": "grunt build",
     "start": "grunt build && grunt"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  }
 }
